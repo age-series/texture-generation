@@ -26,8 +26,9 @@ for line in contents[1:]:
 
 # Note - only works on Linux.
 # TODO: Add Windows/Mac support
+MINECRAFT_STONE_PATH =
 VINTAGE_STORY_STONE_PATH = expanduser("~/.config/Vintagestory/assets/survival/textures/block/stone/rock")
-TEMPLATES_PATH = expanduser("template")
+TEMPLATES_PATH = "template"
 
 templateList = ["{}/{}".format(TEMPLATES_PATH, f) for f in listdir(TEMPLATES_PATH) if isfile(join(TEMPLATES_PATH, f)) and ".png" in f]
 stoneTypes = ["{}/{}".format(VINTAGE_STORY_STONE_PATH, f) for f in listdir(VINTAGE_STORY_STONE_PATH) if isfile(join(VINTAGE_STORY_STONE_PATH, f))]
